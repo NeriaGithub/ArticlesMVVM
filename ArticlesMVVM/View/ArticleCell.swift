@@ -21,7 +21,7 @@ class ArticleCell: UITableViewCell {
             isLike = articleVM.isLiked
             titleLabel.text = articleVM.title
             authorLabel.text = articleVM.authorName
-            avatarImageView.load(urlString: articleVM.avatarImageUrl)
+           avatarImageView.load(urlString: articleVM.avatarImageUrl)
         }
     }
     
@@ -40,7 +40,15 @@ class ArticleCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        shadowView.createShadow(radius: 8.0, opacity: 0.4)
+        shadowView.createShadow(radius: 8.0, opacity: 1)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        avatarImageView.image = nil
+        likeImageView.image = nil
+        backgroundImageView.image = nil
+        
     }
     
    

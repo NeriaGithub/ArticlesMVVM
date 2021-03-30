@@ -85,7 +85,6 @@
 				D6352536261192DB007A7A83 /* Extension */,
 				D63525212611929C007A7A83 /* AppDelegate.swift */,
 				D63525232611929C007A7A83 /* SceneDelegate.swift */,
-				D63525272611929C007A7A83 /* Main.storyboard */,
 				D635252A2611929D007A7A83 /* Assets.xcassets */,
 				D635252C2611929D007A7A83 /* LaunchScreen.storyboard */,
 				D635252F2611929D007A7A83 /* Info.plist */,
@@ -113,6 +112,7 @@
 		D6352538261192E6007A7A83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D63525272611929C007A7A83 /* Main.storyboard */,
 				D63525532611A4CA007A7A83 /* ArticleCell.swift */,
 				D63525542611A4CA007A7A83 /* ArticleCell.xib */,
 			);
